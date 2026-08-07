@@ -1,0 +1,198 @@
+.page {
+  --ink: #111933;
+  --ink-soft: #3a3f5c;
+  --paper: #faf5ef;
+  --paper-raised: #ffffff;
+  --slate: #707585;
+  --garnet: #011b6d;
+  --garnet-soft: #e8ecf5;
+  --line: #e4ddd3;
+
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: var(--garnet);
+  color: #fff;
+}
+
+.headerLogo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  font-family: system-ui, sans-serif;
+}
+
+.kicker {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 36px 28px 80px;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--garnet);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.heroCard {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  padding: 32px;
+  margin-bottom: 28px;
+}
+
+.avatar {
+  width: 140px;
+  height: 168px;
+  background: var(--garnet-soft);
+  color: var(--garnet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.name {
+  font-size: 2.35rem;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  font-weight: 400;
+}
+
+.title {
+  margin: 0 0 18px;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  padding: 6px 10px;
+  background: var(--garnet-soft);
+  color: var(--garnet);
+  border-radius: 2px;
+}
+
+.section {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--slate);
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.section p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.metaList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: system-ui, sans-serif;
+}
+
+.metaList li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.metaList li:last-child {
+  border-bottom: none;
+}
+
+.disclaimer {
+  margin-top: 28px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--slate);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .wrap {
+    padding: 24px 18px 64px;
+  }
+
+  .heroCard {
+    grid-template-columns: 1fr;
+    padding: 22px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    font-size: 1.6rem;
+  }
+
+  .name {
+    font-size: 1.75rem;
+  }
+
+  .section {
+    padding: 22px;
+  }
+}

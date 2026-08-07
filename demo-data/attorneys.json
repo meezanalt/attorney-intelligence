@@ -1,0 +1,1973 @@
+{
+  "firm": {
+    "name": "Harrow & Vance LLP",
+    "shortName": "Harrow & Vance",
+    "website": "harrowvance.demo",
+    "productName": "Ask Harrow & Vance",
+    "tagline": "A fictional full-service law firm for product demonstrations only."
+  },
+  "items": [
+    {
+      "id": "DEMOATTY000000000000000000000000000001",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Thomas Torres",
+      "url": "/attorneys/thomas-torres",
+      "content": "Thomas Torres is a Partner in the Corporate practice of Harrow & Vance LLP, based in Boston. Their practice focuses on mergers, acquisitions, and strategic joint ventures for companies and investors across multiple industries. Thomas is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on mergers, acquisitions, and strategic joint ventures.",
+      "extra": "Position: Partner | Practice areas: Corporate, Mergers and Acquisitions",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Mergers and Acquisitions"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000002",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Benjamin Inoue",
+      "url": "/attorneys/benjamin-inoue",
+      "content": "Benjamin Inoue is a Partner in the Mergers and Acquisitions practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on private equity-backed acquisitions, carve-outs, and sponsor investments for companies and investors across multiple industries. Benjamin is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Mergers and Acquisitions partner focused on private equity-backed acquisitions, carve-outs, and sponsor investments.",
+      "extra": "Position: Partner | Practice areas: Mergers and Acquisitions, Private Equity",
+      "language": "en",
+      "relatedPractices": [
+        "Mergers and Acquisitions",
+        "Private Equity"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000003",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Ethan Vega",
+      "url": "/attorneys/ethan-vega",
+      "content": "Ethan Vega is a Partner in the Corporate practice of Harrow & Vance LLP, based in Denver. Their practice focuses on venture financings, governance, and growth-stage exits for companies and investors across multiple industries. Ethan is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on venture financings, governance, and growth-stage exits.",
+      "extra": "Position: Partner | Practice areas: Corporate, Emerging Company & Venture Capital",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Emerging Company & Venture Capital"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000004",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Nora Iverson",
+      "url": "/attorneys/nora-iverson",
+      "content": "Nora Iverson is a Special Counsel in the Corporate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on public offerings, private placements, and securities compliance for companies and investors across multiple industries. Nora is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate special counsel focused on public offerings, private placements, and securities compliance.",
+      "extra": "Position: Special Counsel | Practice areas: Corporate, Capital Markets, Securities and Governance",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Capital Markets, Securities and Governance"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000005",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Andre Winters",
+      "url": "/attorneys/andre-winters",
+      "content": "Andre Winters is a Counsel in the Litigation practice of Harrow & Vance LLP, based in Boston. They advise clients on complex commercial disputes and trade secret litigation and coordinate closely with colleagues across offices. Andre is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation counsel focused on complex commercial disputes and trade secret litigation.",
+      "extra": "Position: Counsel | Practice areas: Litigation, Trade Secrets",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Trade Secrets"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000006",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Vera Khan",
+      "url": "/attorneys/vera-khan",
+      "content": "Vera Khan is an Of Counsel in the Litigation practice of Harrow & Vance LLP, based in Chicago. They advise clients on class action defense and consumer litigation and coordinate closely with colleagues across offices. Vera is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation of counsel focused on class action defense and consumer litigation.",
+      "extra": "Position: Of Counsel | Practice areas: Litigation, Class Action Defense",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Class Action Defense"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000007",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Caleb Zimmer",
+      "url": "/attorneys/caleb-zimmer",
+      "content": "Caleb Zimmer is an Associate in the Litigation practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving appellate advocacy and complex motions practice, including diligence, drafting, and client counseling. Caleb is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on appellate advocacy and complex motions practice.",
+      "extra": "Position: Associate | Practice areas: Litigation, Appellate",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Appellate"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000008",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Jade Kim",
+      "url": "/attorneys/jade-kim",
+      "content": "Jade Kim is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving white collar defense and government investigations, including diligence, drafting, and client counseling. Jade is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on white collar defense and government investigations.",
+      "extra": "Position: Associate | Practice areas: Litigation, White Collar Defense and Investigations",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "White Collar Defense and Investigations"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000009",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Reed Berg",
+      "url": "/attorneys/reed-berg",
+      "content": "Reed Berg is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on securities litigation and shareholder disputes for companies and investors across multiple industries. Reed is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on securities litigation and shareholder disputes.",
+      "extra": "Position: Partner | Practice areas: Litigation, Securities Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Securities Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000010",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Zoe Ortiz",
+      "url": "/attorneys/zoe-ortiz",
+      "content": "Zoe Ortiz is a Partner in the Real Estate practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on acquisitions, dispositions, and development projects for companies and investors across multiple industries. Zoe is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate partner focused on acquisitions, dispositions, and development projects.",
+      "extra": "Position: Partner | Practice areas: Real Estate, Real Estate Acquisitions and Dispositions",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Acquisitions and Dispositions"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000011",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Grant Banks",
+      "url": "/attorneys/grant-banks",
+      "content": "Grant Banks is a Partner in the Real Estate practice of Harrow & Vance LLP, based in Denver. Their practice focuses on construction loans, permanent financing, and loan workouts for companies and investors across multiple industries. Grant is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate partner focused on construction loans, permanent financing, and loan workouts.",
+      "extra": "Position: Partner | Practice areas: Real Estate, Real Estate Finance",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Finance"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000012",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Neil Owens",
+      "url": "/attorneys/neil-owens",
+      "content": "Neil Owens is a Special Counsel in the Real Estate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on commercial leasing for landlords and national tenants for companies and investors across multiple industries. Neil is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate special counsel focused on commercial leasing for landlords and national tenants.",
+      "extra": "Position: Special Counsel | Practice areas: Real Estate, Commercial Leasing",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Commercial Leasing"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000013",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Violet Dunn",
+      "url": "/attorneys/violet-dunn",
+      "content": "Violet Dunn is a Counsel in the Real Estate practice of Harrow & Vance LLP, based in Boston. They advise clients on real estate litigation and construction disputes and coordinate closely with colleagues across offices. Violet is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate counsel focused on real estate litigation and construction disputes.",
+      "extra": "Position: Counsel | Practice areas: Real Estate, Real Estate Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000014",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Drew Ross",
+      "url": "/attorneys/drew-ross",
+      "content": "Drew Ross is an Of Counsel in the Real Estate practice of Harrow & Vance LLP, based in Chicago. They advise clients on land use, entitlements, and zoning strategy and coordinate closely with colleagues across offices. Drew is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate of counsel focused on land use, entitlements, and zoning strategy.",
+      "extra": "Position: Of Counsel | Practice areas: Real Estate, Land Use",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Land Use"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000015",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Marcus Finley",
+      "url": "/attorneys/marcus-finley",
+      "content": "Marcus Finley is an Associate in the Labor and Employment practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving employment counseling and employment litigation, including diligence, drafting, and client counseling. Marcus is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment associate focused on employment counseling and employment litigation.",
+      "extra": "Position: Associate | Practice areas: Labor and Employment, Labor and Employment Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000016",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Aisha Holloway",
+      "url": "/attorneys/aisha-holloway",
+      "content": "Aisha Holloway is an Associate in the Labor and Employment practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving workforce compliance and traditional labor relations, including diligence, drafting, and client counseling. Aisha is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment associate focused on workforce compliance and traditional labor relations.",
+      "extra": "Position: Associate | Practice areas: Labor and Employment, Labor and Employment Counseling",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Counseling"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000017",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Olivia Hayes",
+      "url": "/attorneys/olivia-hayes",
+      "content": "Olivia Hayes is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Boston. Their practice focuses on restrictive covenants, trade secrets, and executive transitions for companies and investors across multiple industries. Olivia is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on restrictive covenants, trade secrets, and executive transitions.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Trade Secrets, Executive Compensation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Trade Secrets",
+        "Executive Compensation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000018",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Clara Underwood",
+      "url": "/attorneys/clara-underwood",
+      "content": "Clara Underwood is a Partner in the Intellectual Property practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on patent litigation and competitor disputes for companies and investors across multiple industries. Clara is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property partner focused on patent litigation and competitor disputes.",
+      "extra": "Position: Partner | Practice areas: Intellectual Property, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000019",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Seth Harper",
+      "url": "/attorneys/seth-harper",
+      "content": "Seth Harper is a Partner in the Intellectual Property practice of Harrow & Vance LLP, based in Denver. Their practice focuses on patent strategy and prosecution for technology and life sciences for companies and investors across multiple industries. Seth is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property partner focused on patent strategy and prosecution for technology and life sciences.",
+      "extra": "Position: Partner | Practice areas: Intellectual Property, Patent Strategy and Prosecution",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Strategy and Prosecution"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000020",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Piper Vaughn",
+      "url": "/attorneys/piper-vaughn",
+      "content": "Piper Vaughn is a Special Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on trademark, copyright, and brand enforcement for companies and investors across multiple industries. Piper is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property special counsel focused on trademark, copyright, and brand enforcement.",
+      "extra": "Position: Special Counsel | Practice areas: Intellectual Property, Trademark, Copyright",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Trademark",
+        "Copyright"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000021",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Wade Joyce",
+      "url": "/attorneys/wade-joyce",
+      "content": "Wade Joyce is a Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Boston. They advise clients on privacy, cybersecurity, and data arrangements and coordinate closely with colleagues across offices. Wade is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property counsel focused on privacy, cybersecurity, and data arrangements.",
+      "extra": "Position: Counsel | Practice areas: Intellectual Property, Privacy and Cybersecurity",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Privacy and Cybersecurity"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000022",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Delia York",
+      "url": "/attorneys/delia-york",
+      "content": "Delia York is an Of Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Chicago. They advise clients on ITC investigations and patent litigation and coordinate closely with colleagues across offices. Delia is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property of counsel focused on ITC investigations and patent litigation.",
+      "extra": "Position: Of Counsel | Practice areas: Intellectual Property, ITC Litigation, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "ITC Litigation",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000023",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Kai Okonkwo",
+      "url": "/attorneys/kai-okonkwo",
+      "content": "Kai Okonkwo is an Associate in the Litigation practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving healthcare regulatory counseling and related disputes, including diligence, drafting, and client counseling. Kai is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on healthcare regulatory counseling and related disputes.",
+      "extra": "Position: Associate | Practice areas: Healthcare, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Healthcare",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000024",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Sasha Soto",
+      "url": "/attorneys/sasha-soto",
+      "content": "Sasha Soto is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving antitrust counseling and competition disputes, including diligence, drafting, and client counseling. Sasha is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on antitrust counseling and competition disputes.",
+      "extra": "Position: Associate | Practice areas: Antitrust and Competition, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Antitrust and Competition",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000025",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Aiden Nguyen",
+      "url": "/attorneys/aiden-nguyen",
+      "content": "Aiden Nguyen is a Partner in the Corporate practice of Harrow & Vance LLP, based in Boston. Their practice focuses on transactional tax planning for corporate deals for companies and investors across multiple industries. Aiden is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on transactional tax planning for corporate deals.",
+      "extra": "Position: Partner | Practice areas: Tax, Corporate",
+      "language": "en",
+      "relatedPractices": [
+        "Tax",
+        "Corporate"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000026",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Hazel Abbott",
+      "url": "/attorneys/hazel-abbott",
+      "content": "Hazel Abbott is a Partner in the Corporate practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on mergers, acquisitions, and strategic joint ventures for companies and investors across multiple industries. Hazel is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on mergers, acquisitions, and strategic joint ventures.",
+      "extra": "Position: Partner | Practice areas: Corporate, Mergers and Acquisitions",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Mergers and Acquisitions"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000027",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Opal Nolan",
+      "url": "/attorneys/opal-nolan",
+      "content": "Opal Nolan is a Partner in the Mergers and Acquisitions practice of Harrow & Vance LLP, based in Denver. Their practice focuses on private equity-backed acquisitions, carve-outs, and sponsor investments for companies and investors across multiple industries. Opal is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Mergers and Acquisitions partner focused on private equity-backed acquisitions, carve-outs, and sponsor investments.",
+      "extra": "Position: Partner | Practice areas: Mergers and Acquisitions, Private Equity",
+      "language": "en",
+      "relatedPractices": [
+        "Mergers and Acquisitions",
+        "Private Equity"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000028",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Wes Craig",
+      "url": "/attorneys/wes-craig",
+      "content": "Wes Craig is a Special Counsel in the Corporate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on venture financings, governance, and growth-stage exits for companies and investors across multiple industries. Wes is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate special counsel focused on venture financings, governance, and growth-stage exits.",
+      "extra": "Position: Special Counsel | Practice areas: Corporate, Emerging Company & Venture Capital",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Emerging Company & Venture Capital"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000029",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Erin Perry",
+      "url": "/attorneys/erin-perry",
+      "content": "Erin Perry is a Counsel in the Corporate practice of Harrow & Vance LLP, based in Boston. They advise clients on public offerings, private placements, and securities compliance and coordinate closely with colleagues across offices. Erin is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate counsel focused on public offerings, private placements, and securities compliance.",
+      "extra": "Position: Counsel | Practice areas: Corporate, Capital Markets, Securities and Governance",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Capital Markets, Securities and Governance"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000030",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Priya Eastman",
+      "url": "/attorneys/priya-eastman",
+      "content": "Priya Eastman is an Of Counsel in the Litigation practice of Harrow & Vance LLP, based in Chicago. They advise clients on complex commercial disputes and trade secret litigation and coordinate closely with colleagues across offices. Priya is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation of counsel focused on complex commercial disputes and trade secret litigation.",
+      "extra": "Position: Of Counsel | Practice areas: Litigation, Trade Secrets",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Trade Secrets"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000031",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "James Mendoza",
+      "url": "/attorneys/james-mendoza",
+      "content": "James Mendoza is an Associate in the Litigation practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving class action defense and consumer litigation, including diligence, drafting, and client counseling. James is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on class action defense and consumer litigation.",
+      "extra": "Position: Associate | Practice areas: Litigation, Class Action Defense",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Class Action Defense"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000032",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Hannah Gupta",
+      "url": "/attorneys/hannah-gupta",
+      "content": "Hannah Gupta is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving appellate advocacy and complex motions practice, including diligence, drafting, and client counseling. Hannah is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on appellate advocacy and complex motions practice.",
+      "extra": "Position: Associate | Practice areas: Litigation, Appellate",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Appellate"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000033",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Owen Tran",
+      "url": "/attorneys/owen-tran",
+      "content": "Owen Tran is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on white collar defense and government investigations for companies and investors across multiple industries. Owen is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on white collar defense and government investigations.",
+      "extra": "Position: Partner | Practice areas: Litigation, White Collar Defense and Investigations",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "White Collar Defense and Investigations"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000034",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Tara Gibson",
+      "url": "/attorneys/tara-gibson",
+      "content": "Tara Gibson is a Partner in the Litigation practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on securities litigation and shareholder disputes for companies and investors across multiple industries. Tara is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on securities litigation and shareholder disputes.",
+      "extra": "Position: Partner | Practice areas: Litigation, Securities Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Securities Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000035",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Quinn Upton",
+      "url": "/attorneys/quinn-upton",
+      "content": "Quinn Upton is a Partner in the Real Estate practice of Harrow & Vance LLP, based in Denver. Their practice focuses on acquisitions, dispositions, and development projects for companies and investors across multiple industries. Quinn is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate partner focused on acquisitions, dispositions, and development projects.",
+      "extra": "Position: Partner | Practice areas: Real Estate, Real Estate Acquisitions and Dispositions",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Acquisitions and Dispositions"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000036",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Xena Ibrahim",
+      "url": "/attorneys/xena-ibrahim",
+      "content": "Xena Ibrahim is a Special Counsel in the Real Estate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on construction loans, permanent financing, and loan workouts for companies and investors across multiple industries. Xena is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate special counsel focused on construction loans, permanent financing, and loan workouts.",
+      "extra": "Position: Special Counsel | Practice areas: Real Estate, Real Estate Finance",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Finance"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000037",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Elliot Webb",
+      "url": "/attorneys/elliot-webb",
+      "content": "Elliot Webb is a Counsel in the Real Estate practice of Harrow & Vance LLP, based in Boston. They advise clients on commercial leasing for landlords and national tenants and coordinate closely with colleagues across offices. Elliot is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate counsel focused on commercial leasing for landlords and national tenants.",
+      "extra": "Position: Counsel | Practice areas: Real Estate, Commercial Leasing",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Commercial Leasing"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000038",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Lana Patel",
+      "url": "/attorneys/lana-patel",
+      "content": "Lana Patel is an Of Counsel in the Real Estate practice of Harrow & Vance LLP, based in Chicago. They advise clients on real estate litigation and construction disputes and coordinate closely with colleagues across offices. Lana is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate of counsel focused on real estate litigation and construction disputes.",
+      "extra": "Position: Of Counsel | Practice areas: Real Estate, Real Estate Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000039",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Troy Lang",
+      "url": "/attorneys/troy-lang",
+      "content": "Troy Lang is an Associate in the Real Estate practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving land use, entitlements, and zoning strategy, including diligence, drafting, and client counseling. Troy is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate associate focused on land use, entitlements, and zoning strategy.",
+      "extra": "Position: Associate | Practice areas: Real Estate, Land Use",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Land Use"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000040",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Brooke Morris",
+      "url": "/attorneys/brooke-morris",
+      "content": "Brooke Morris is an Associate in the Labor and Employment practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving employment counseling and employment litigation, including diligence, drafting, and client counseling. Brooke is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment associate focused on employment counseling and employment litigation.",
+      "extra": "Position: Associate | Practice areas: Labor and Employment, Labor and Employment Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000041",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Iris Zimmerman",
+      "url": "/attorneys/iris-zimmerman",
+      "content": "Iris Zimmerman is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Boston. Their practice focuses on workforce compliance and traditional labor relations for companies and investors across multiple industries. Iris is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on workforce compliance and traditional labor relations.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Labor and Employment Counseling",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Counseling"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000042",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Pete Mitchell",
+      "url": "/attorneys/pete-mitchell",
+      "content": "Pete Mitchell is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on restrictive covenants, trade secrets, and executive transitions for companies and investors across multiple industries. Pete is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on restrictive covenants, trade secrets, and executive transitions.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Trade Secrets, Executive Compensation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Trade Secrets",
+        "Executive Compensation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000043",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Yara Bishop",
+      "url": "/attorneys/yara-bishop",
+      "content": "Yara Bishop is a Partner in the Intellectual Property practice of Harrow & Vance LLP, based in Denver. Their practice focuses on patent litigation and competitor disputes for companies and investors across multiple industries. Yara is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property partner focused on patent litigation and competitor disputes.",
+      "extra": "Position: Partner | Practice areas: Intellectual Property, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000044",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Finn Olsen",
+      "url": "/attorneys/finn-olsen",
+      "content": "Finn Olsen is a Special Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on patent strategy and prosecution for technology and life sciences for companies and investors across multiple industries. Finn is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property special counsel focused on patent strategy and prosecution for technology and life sciences.",
+      "extra": "Position: Special Counsel | Practice areas: Intellectual Property, Patent Strategy and Prosecution",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Strategy and Prosecution"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000045",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Jonathan Drake",
+      "url": "/attorneys/jonathan-drake",
+      "content": "Jonathan Drake is a Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Boston. They advise clients on trademark, copyright, and brand enforcement and coordinate closely with colleagues across offices. Jonathan is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property counsel focused on trademark, copyright, and brand enforcement.",
+      "extra": "Position: Counsel | Practice areas: Intellectual Property, Trademark, Copyright",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Trademark",
+        "Copyright"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000046",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Natalie Brooks",
+      "url": "/attorneys/natalie-brooks",
+      "content": "Natalie Brooks is an Of Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Chicago. They advise clients on privacy, cybersecurity, and data arrangements and coordinate closely with colleagues across offices. Natalie is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property of counsel focused on privacy, cybersecurity, and data arrangements.",
+      "extra": "Position: Of Counsel | Practice areas: Intellectual Property, Privacy and Cybersecurity",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Privacy and Cybersecurity"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000047",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Victor Foster",
+      "url": "/attorneys/victor-foster",
+      "content": "Victor Foster is an Associate in the Intellectual Property practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving ITC investigations and patent litigation, including diligence, drafting, and client counseling. Victor is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property associate focused on ITC investigations and patent litigation.",
+      "extra": "Position: Associate | Practice areas: Intellectual Property, ITC Litigation, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "ITC Litigation",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000048",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Maya Singh",
+      "url": "/attorneys/maya-singh",
+      "content": "Maya Singh is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving healthcare regulatory counseling and related disputes, including diligence, drafting, and client counseling. Maya is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on healthcare regulatory counseling and related disputes.",
+      "extra": "Position: Associate | Practice areas: Healthcare, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Healthcare",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000049",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Hugo Farrell",
+      "url": "/attorneys/hugo-farrell",
+      "content": "Hugo Farrell is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on antitrust counseling and competition disputes for companies and investors across multiple industries. Hugo is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on antitrust counseling and competition disputes.",
+      "extra": "Position: Partner | Practice areas: Antitrust and Competition, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Antitrust and Competition",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000050",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Rosa Turner",
+      "url": "/attorneys/rosa-turner",
+      "content": "Rosa Turner is a Partner in the Corporate practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on transactional tax planning for corporate deals for companies and investors across multiple industries. Rosa is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on transactional tax planning for corporate deals.",
+      "extra": "Position: Partner | Practice areas: Tax, Corporate",
+      "language": "en",
+      "relatedPractices": [
+        "Tax",
+        "Corporate"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000051",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Yves Hart",
+      "url": "/attorneys/yves-hart",
+      "content": "Yves Hart is a Partner in the Corporate practice of Harrow & Vance LLP, based in Denver. Their practice focuses on mergers, acquisitions, and strategic joint ventures for companies and investors across multiple industries. Yves is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on mergers, acquisitions, and strategic joint ventures.",
+      "extra": "Position: Partner | Practice areas: Corporate, Mergers and Acquisitions",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Mergers and Acquisitions"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000052",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Farah Vance",
+      "url": "/attorneys/farah-vance",
+      "content": "Farah Vance is a Special Counsel in the Mergers and Acquisitions practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on private equity-backed acquisitions, carve-outs, and sponsor investments for companies and investors across multiple industries. Farah is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Mergers and Acquisitions special counsel focused on private equity-backed acquisitions, carve-outs, and sponsor investments.",
+      "extra": "Position: Special Counsel | Practice areas: Mergers and Acquisitions, Private Equity",
+      "language": "en",
+      "relatedPractices": [
+        "Mergers and Acquisitions",
+        "Private Equity"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000053",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Miles Hale",
+      "url": "/attorneys/miles-hale",
+      "content": "Miles Hale is a Counsel in the Corporate practice of Harrow & Vance LLP, based in Boston. They advise clients on venture financings, governance, and growth-stage exits and coordinate closely with colleagues across offices. Miles is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate counsel focused on venture financings, governance, and growth-stage exits.",
+      "extra": "Position: Counsel | Practice areas: Corporate, Emerging Company & Venture Capital",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Emerging Company & Venture Capital"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000054",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Uma Li",
+      "url": "/attorneys/uma-li",
+      "content": "Uma Li is an Of Counsel in the Corporate practice of Harrow & Vance LLP, based in Chicago. They advise clients on public offerings, private placements, and securities compliance and coordinate closely with colleagues across offices. Uma is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate of counsel focused on public offerings, private placements, and securities compliance.",
+      "extra": "Position: Of Counsel | Practice areas: Corporate, Capital Markets, Securities and Governance",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Capital Markets, Securities and Governance"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000055",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Colin Lopez",
+      "url": "/attorneys/colin-lopez",
+      "content": "Colin Lopez is an Associate in the Litigation practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving complex commercial disputes and trade secret litigation, including diligence, drafting, and client counseling. Colin is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on complex commercial disputes and trade secret litigation.",
+      "extra": "Position: Associate | Practice areas: Litigation, Trade Secrets",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Trade Secrets"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000056",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Jake Young",
+      "url": "/attorneys/jake-young",
+      "content": "Jake Young is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving class action defense and consumer litigation, including diligence, drafting, and client counseling. Jake is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on class action defense and consumer litigation.",
+      "extra": "Position: Associate | Practice areas: Litigation, Class Action Defense",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Class Action Defense"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000057",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Rita Lawson",
+      "url": "/attorneys/rita-lawson",
+      "content": "Rita Lawson is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on appellate advocacy and complex motions practice for companies and investors across multiple industries. Rita is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on appellate advocacy and complex motions practice.",
+      "extra": "Position: Partner | Practice areas: Litigation, Appellate",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Appellate"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000058",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Zack Alvarez",
+      "url": "/attorneys/zack-alvarez",
+      "content": "Zack Alvarez is a Partner in the Litigation practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on white collar defense and government investigations for companies and investors across multiple industries. Zack is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on white collar defense and government investigations.",
+      "extra": "Position: Partner | Practice areas: Litigation, White Collar Defense and Investigations",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "White Collar Defense and Investigations"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000059",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Gina Nash",
+      "url": "/attorneys/gina-nash",
+      "content": "Gina Nash is a Partner in the Litigation practice of Harrow & Vance LLP, based in Denver. Their practice focuses on securities litigation and shareholder disputes for companies and investors across multiple industries. Gina is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on securities litigation and shareholder disputes.",
+      "extra": "Position: Partner | Practice areas: Litigation, Securities Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Securities Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000060",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Sofia Curtis",
+      "url": "/attorneys/sofia-curtis",
+      "content": "Sofia Curtis is a Special Counsel in the Real Estate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on acquisitions, dispositions, and development projects for companies and investors across multiple industries. Sofia is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate special counsel focused on acquisitions, dispositions, and development projects.",
+      "extra": "Position: Special Counsel | Practice areas: Real Estate, Real Estate Acquisitions and Dispositions",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Acquisitions and Dispositions"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000061",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Carlos Whitfield",
+      "url": "/attorneys/carlos-whitfield",
+      "content": "Carlos Whitfield is a Counsel in the Real Estate practice of Harrow & Vance LLP, based in Boston. They advise clients on construction loans, permanent financing, and loan workouts and coordinate closely with colleagues across offices. Carlos is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate counsel focused on construction loans, permanent financing, and loan workouts.",
+      "extra": "Position: Counsel | Practice areas: Real Estate, Real Estate Finance",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Finance"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000062",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Amelia Diaz",
+      "url": "/attorneys/amelia-diaz",
+      "content": "Amelia Diaz is an Of Counsel in the Real Estate practice of Harrow & Vance LLP, based in Chicago. They advise clients on commercial leasing for landlords and national tenants and coordinate closely with colleagues across offices. Amelia is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate of counsel focused on commercial leasing for landlords and national tenants.",
+      "extra": "Position: Of Counsel | Practice areas: Real Estate, Commercial Leasing",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Commercial Leasing"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000063",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Felix Reeves",
+      "url": "/attorneys/felix-reeves",
+      "content": "Felix Reeves is an Associate in the Real Estate practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving real estate litigation and construction disputes, including diligence, drafting, and client counseling. Felix is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate associate focused on real estate litigation and construction disputes.",
+      "extra": "Position: Associate | Practice areas: Real Estate, Real Estate Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000064",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Diana Edwards",
+      "url": "/attorneys/diana-edwards",
+      "content": "Diana Edwards is an Associate in the Real Estate practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving land use, entitlements, and zoning strategy, including diligence, drafting, and client counseling. Diana is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate associate focused on land use, entitlements, and zoning strategy.",
+      "extra": "Position: Associate | Practice areas: Real Estate, Land Use",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Land Use"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000065",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Samir Steele",
+      "url": "/attorneys/samir-steele",
+      "content": "Samir Steele is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Boston. Their practice focuses on employment counseling and employment litigation for companies and investors across multiple industries. Samir is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on employment counseling and employment litigation.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Labor and Employment Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000066",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Zara Greene",
+      "url": "/attorneys/zara-greene",
+      "content": "Zara Greene is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on workforce compliance and traditional labor relations for companies and investors across multiple industries. Zara is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on workforce compliance and traditional labor relations.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Labor and Employment Counseling",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Counseling"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000067",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Gabe Ulrich",
+      "url": "/attorneys/gabe-ulrich",
+      "content": "Gabe Ulrich is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Denver. Their practice focuses on restrictive covenants, trade secrets, and executive transitions for companies and investors across multiple industries. Gabe is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on restrictive covenants, trade secrets, and executive transitions.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Trade Secrets, Executive Compensation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Trade Secrets",
+        "Executive Compensation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000068",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Nina Nair",
+      "url": "/attorneys/nina-nair",
+      "content": "Nina Nair is a Special Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on patent litigation and competitor disputes for companies and investors across multiple industries. Nina is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property special counsel focused on patent litigation and competitor disputes.",
+      "extra": "Position: Special Counsel | Practice areas: Intellectual Property, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000069",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Vince Grant",
+      "url": "/attorneys/vince-grant",
+      "content": "Vince Grant is a Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Boston. They advise clients on patent strategy and prosecution for technology and life sciences and coordinate closely with colleagues across offices. Vince is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property counsel focused on patent strategy and prosecution for technology and life sciences.",
+      "extra": "Position: Counsel | Practice areas: Intellectual Property, Patent Strategy and Prosecution",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Strategy and Prosecution"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000070",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Dana Kline",
+      "url": "/attorneys/dana-kline",
+      "content": "Dana Kline is an Of Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Chicago. They advise clients on trademark, copyright, and brand enforcement and coordinate closely with colleagues across offices. Dana is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property of counsel focused on trademark, copyright, and brand enforcement.",
+      "extra": "Position: Of Counsel | Practice areas: Intellectual Property, Trademark, Copyright",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Trademark",
+        "Copyright"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000071",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Kara Xu",
+      "url": "/attorneys/kara-xu",
+      "content": "Kara Xu is an Associate in the Intellectual Property practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving privacy, cybersecurity, and data arrangements, including diligence, drafting, and client counseling. Kara is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property associate focused on privacy, cybersecurity, and data arrangements.",
+      "extra": "Position: Associate | Practice areas: Intellectual Property, Privacy and Cybersecurity",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Privacy and Cybersecurity"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000072",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Sean Keller",
+      "url": "/attorneys/sean-keller",
+      "content": "Sean Keller is an Associate in the Intellectual Property practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving ITC investigations and patent litigation, including diligence, drafting, and client counseling. Sean is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property associate focused on ITC investigations and patent litigation.",
+      "extra": "Position: Associate | Practice areas: Intellectual Property, ITC Litigation, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "ITC Litigation",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000073",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Ava Zhao",
+      "url": "/attorneys/ava-zhao",
+      "content": "Ava Zhao is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on healthcare regulatory counseling and related disputes for companies and investors across multiple industries. Ava is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on healthcare regulatory counseling and related disputes.",
+      "extra": "Position: Partner | Practice areas: Healthcare, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Healthcare",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000074",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Hank Marsh",
+      "url": "/attorneys/hank-marsh",
+      "content": "Hank Marsh is a Partner in the Litigation practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on antitrust counseling and competition disputes for companies and investors across multiple industries. Hank is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on antitrust counseling and competition disputes.",
+      "extra": "Position: Partner | Practice areas: Antitrust and Competition, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Antitrust and Competition",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000075",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "David Barron",
+      "url": "/attorneys/david-barron",
+      "content": "David Barron is a Partner in the Corporate practice of Harrow & Vance LLP, based in Denver. Their practice focuses on transactional tax planning for corporate deals for companies and investors across multiple industries. David is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate partner focused on transactional tax planning for corporate deals.",
+      "extra": "Position: Partner | Practice areas: Tax, Corporate",
+      "language": "en",
+      "relatedPractices": [
+        "Tax",
+        "Corporate"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000076",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Grace Rahman",
+      "url": "/attorneys/grace-rahman",
+      "content": "Grace Rahman is a Special Counsel in the Corporate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on mergers, acquisitions, and strategic joint ventures for companies and investors across multiple industries. Grace is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate special counsel focused on mergers, acquisitions, and strategic joint ventures.",
+      "extra": "Position: Special Counsel | Practice areas: Corporate, Mergers and Acquisitions",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Mergers and Acquisitions"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000077",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Noah Cross",
+      "url": "/attorneys/noah-cross",
+      "content": "Noah Cross is a Counsel in the Mergers and Acquisitions practice of Harrow & Vance LLP, based in Boston. They advise clients on private equity-backed acquisitions, carve-outs, and sponsor investments and coordinate closely with colleagues across offices. Noah is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Mergers and Acquisitions counsel focused on private equity-backed acquisitions, carve-outs, and sponsor investments.",
+      "extra": "Position: Counsel | Practice areas: Mergers and Acquisitions, Private Equity",
+      "language": "en",
+      "relatedPractices": [
+        "Mergers and Acquisitions",
+        "Private Equity"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000078",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Ivy Quinn",
+      "url": "/attorneys/ivy-quinn",
+      "content": "Ivy Quinn is an Of Counsel in the Corporate practice of Harrow & Vance LLP, based in Chicago. They advise clients on venture financings, governance, and growth-stage exits and coordinate closely with colleagues across offices. Ivy is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate of counsel focused on venture financings, governance, and growth-stage exits.",
+      "extra": "Position: Of Counsel | Practice areas: Corporate, Emerging Company & Venture Capital",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Emerging Company & Venture Capital"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000079",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Leo Dalton",
+      "url": "/attorneys/leo-dalton",
+      "content": "Leo Dalton is an Associate in the Corporate practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving public offerings, private placements, and securities compliance, including diligence, drafting, and client counseling. Leo is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate associate focused on public offerings, private placements, and securities compliance.",
+      "extra": "Position: Associate | Practice areas: Corporate, Capital Markets, Securities and Governance",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate",
+        "Capital Markets, Securities and Governance"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000080",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Thea Romero",
+      "url": "/attorneys/thea-romero",
+      "content": "Thea Romero is an Associate in the Litigation practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving complex commercial disputes and trade secret litigation, including diligence, drafting, and client counseling. Thea is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation associate focused on complex commercial disputes and trade secret litigation.",
+      "extra": "Position: Associate | Practice areas: Litigation, Trade Secrets",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Trade Secrets"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000081",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Adrian Frost",
+      "url": "/attorneys/adrian-frost",
+      "content": "Adrian Frost is a Partner in the Litigation practice of Harrow & Vance LLP, based in Boston. Their practice focuses on class action defense and consumer litigation for companies and investors across multiple industries. Adrian is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on class action defense and consumer litigation.",
+      "extra": "Position: Partner | Practice areas: Litigation, Class Action Defense",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Class Action Defense"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000082",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Helen Tyler",
+      "url": "/attorneys/helen-tyler",
+      "content": "Helen Tyler is a Partner in the Litigation practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on appellate advocacy and complex motions practice for companies and investors across multiple industries. Helen is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on appellate advocacy and complex motions practice.",
+      "extra": "Position: Partner | Practice areas: Litigation, Appellate",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Appellate"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000083",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Oscar Chen",
+      "url": "/attorneys/oscar-chen",
+      "content": "Oscar Chen is a Partner in the Litigation practice of Harrow & Vance LLP, based in Denver. Their practice focuses on white collar defense and government investigations for companies and investors across multiple industries. Oscar is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on white collar defense and government investigations.",
+      "extra": "Position: Partner | Practice areas: Litigation, White Collar Defense and Investigations",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "White Collar Defense and Investigations"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000084",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Willa Adler",
+      "url": "/attorneys/willa-adler",
+      "content": "Willa Adler is a Special Counsel in the Litigation practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on securities litigation and shareholder disputes for companies and investors across multiple industries. Willa is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation special counsel focused on securities litigation and shareholder disputes.",
+      "extra": "Position: Special Counsel | Practice areas: Litigation, Securities Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation",
+        "Securities Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000085",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Evan Jensen",
+      "url": "/attorneys/evan-jensen",
+      "content": "Evan Jensen is a Counsel in the Real Estate practice of Harrow & Vance LLP, based in Boston. They advise clients on acquisitions, dispositions, and development projects and coordinate closely with colleagues across offices. Evan is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate counsel focused on acquisitions, dispositions, and development projects.",
+      "extra": "Position: Counsel | Practice areas: Real Estate, Real Estate Acquisitions and Dispositions",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Acquisitions and Dispositions"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000086",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Liam Walsh",
+      "url": "/attorneys/liam-walsh",
+      "content": "Liam Walsh is an Of Counsel in the Real Estate practice of Harrow & Vance LLP, based in Chicago. They advise clients on construction loans, permanent financing, and loan workouts and coordinate closely with colleagues across offices. Liam is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate of counsel focused on construction loans, permanent financing, and loan workouts.",
+      "extra": "Position: Of Counsel | Practice areas: Real Estate, Real Estate Finance",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Finance"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000087",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Tess Jordan",
+      "url": "/attorneys/tess-jordan",
+      "content": "Tess Jordan is an Associate in the Real Estate practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving commercial leasing for landlords and national tenants, including diligence, drafting, and client counseling. Tess is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate associate focused on commercial leasing for landlords and national tenants.",
+      "extra": "Position: Associate | Practice areas: Real Estate, Commercial Leasing",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Commercial Leasing"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000088",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Brett Yates",
+      "url": "/attorneys/brett-yates",
+      "content": "Brett Yates is an Associate in the Real Estate practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving real estate litigation and construction disputes, including diligence, drafting, and client counseling. Brett is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate associate focused on real estate litigation and construction disputes.",
+      "extra": "Position: Associate | Practice areas: Real Estate, Real Estate Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Real Estate Litigation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000089",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Isla Lambert",
+      "url": "/attorneys/isla-lambert",
+      "content": "Isla Lambert is a Partner in the Real Estate practice of Harrow & Vance LLP, based in Boston. Their practice focuses on land use, entitlements, and zoning strategy for companies and investors across multiple industries. Isla is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Real Estate partner focused on land use, entitlements, and zoning strategy.",
+      "extra": "Position: Partner | Practice areas: Real Estate, Land Use",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate",
+        "Land Use"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000090",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Rachel Ashford",
+      "url": "/attorneys/rachel-ashford",
+      "content": "Rachel Ashford is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on employment counseling and employment litigation for companies and investors across multiple industries. Rachel is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on employment counseling and employment litigation.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Labor and Employment Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000091",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Michelle Brennan",
+      "url": "/attorneys/michelle-brennan",
+      "content": "Michelle Brennan is a Partner in the Labor and Employment practice of Harrow & Vance LLP, based in Denver. Their practice focuses on workforce compliance and traditional labor relations for companies and investors across multiple industries. Michelle is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment partner focused on workforce compliance and traditional labor relations.",
+      "extra": "Position: Partner | Practice areas: Labor and Employment, Labor and Employment Counseling",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Labor and Employment Counseling"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000092",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Lila Moreau",
+      "url": "/attorneys/lila-moreau",
+      "content": "Lila Moreau is a Special Counsel in the Labor and Employment practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on restrictive covenants, trade secrets, and executive transitions for companies and investors across multiple industries. Lila is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Labor and Employment special counsel focused on restrictive covenants, trade secrets, and executive transitions.",
+      "extra": "Position: Special Counsel | Practice areas: Labor and Employment, Trade Secrets, Executive Compensation",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment",
+        "Trade Secrets",
+        "Executive Compensation"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000093",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Julian Park",
+      "url": "/attorneys/julian-park",
+      "content": "Julian Park is a Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Boston. They advise clients on patent litigation and competitor disputes and coordinate closely with colleagues across offices. Julian is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property counsel focused on patent litigation and competitor disputes.",
+      "extra": "Position: Counsel | Practice areas: Intellectual Property, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000094",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Camille Cohen",
+      "url": "/attorneys/camille-cohen",
+      "content": "Camille Cohen is an Of Counsel in the Intellectual Property practice of Harrow & Vance LLP, based in Chicago. They advise clients on patent strategy and prosecution for technology and life sciences and coordinate closely with colleagues across offices. Camille is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property of counsel focused on patent strategy and prosecution for technology and life sciences.",
+      "extra": "Position: Of Counsel | Practice areas: Intellectual Property, Patent Strategy and Prosecution",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Patent Strategy and Prosecution"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000095",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Ulysses Price",
+      "url": "/attorneys/ulysses-price",
+      "content": "Ulysses Price is an Associate in the Intellectual Property practice of Harrow & Vance LLP, based in Denver. They support partners on matters involving trademark, copyright, and brand enforcement, including diligence, drafting, and client counseling. Ulysses is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property associate focused on trademark, copyright, and brand enforcement.",
+      "extra": "Position: Associate | Practice areas: Intellectual Property, Trademark, Copyright",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Trademark",
+        "Copyright"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000096",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Blair Ellis",
+      "url": "/attorneys/blair-ellis",
+      "content": "Blair Ellis is an Associate in the Intellectual Property practice of Harrow & Vance LLP, based in Seattle. They support partners on matters involving privacy, cybersecurity, and data arrangements, including diligence, drafting, and client counseling. Blair is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property associate focused on privacy, cybersecurity, and data arrangements.",
+      "extra": "Position: Associate | Practice areas: Intellectual Property, Privacy and Cybersecurity",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "Privacy and Cybersecurity"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000097",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Ian Shaw",
+      "url": "/attorneys/ian-shaw",
+      "content": "Ian Shaw is a Partner in the Intellectual Property practice of Harrow & Vance LLP, based in Boston. Their practice focuses on ITC investigations and patent litigation for companies and investors across multiple industries. Ian is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Intellectual Property partner focused on ITC investigations and patent litigation.",
+      "extra": "Position: Partner | Practice areas: Intellectual Property, ITC Litigation, Patent Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property",
+        "ITC Litigation",
+        "Patent Litigation"
+      ],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000098",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Paula Vargas",
+      "url": "/attorneys/paula-vargas",
+      "content": "Paula Vargas is a Partner in the Litigation practice of Harrow & Vance LLP, based in Chicago. Their practice focuses on healthcare regulatory counseling and related disputes for companies and investors across multiple industries. Paula is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on healthcare regulatory counseling and related disputes.",
+      "extra": "Position: Partner | Practice areas: Healthcare, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Healthcare",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000099",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Yuri Torres",
+      "url": "/attorneys/yuri-torres",
+      "content": "Yuri Torres is a Partner in the Litigation practice of Harrow & Vance LLP, based in Denver. Their practice focuses on antitrust counseling and competition disputes for companies and investors across multiple industries. Yuri is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Litigation partner focused on antitrust counseling and competition disputes.",
+      "extra": "Position: Partner | Practice areas: Antitrust and Competition, Litigation",
+      "language": "en",
+      "relatedPractices": [
+        "Antitrust and Competition",
+        "Litigation"
+      ],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOATTY000000000000000000000000000100",
+      "templateId": "F594ABEFF4174151BE316B7E159601AE",
+      "templateName": "Bio Detail",
+      "title": "Fiona Inoue",
+      "url": "/attorneys/fiona-inoue",
+      "content": "Fiona Inoue is a Special Counsel in the Corporate practice of Harrow & Vance LLP, based in Seattle. Their practice focuses on transactional tax planning for corporate deals for companies and investors across multiple industries. Fiona is known for practical advice, clear communication, and aligning legal strategy with business goals. Clients include public companies, private equity sponsors, and growth-stage businesses.",
+      "description": "Corporate special counsel focused on transactional tax planning for corporate deals.",
+      "extra": "Position: Special Counsel | Practice areas: Tax, Corporate",
+      "language": "en",
+      "relatedPractices": [
+        "Tax",
+        "Corporate"
+      ],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000001",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Corporate",
+      "url": "/practices/corporate",
+      "content": "The Corporate practice at Harrow & Vance LLP full-service corporate counseling for transactions, financings, and governance. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Full-service corporate counseling for transactions, financings, and governance.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Corporate"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000002",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Mergers and Acquisitions",
+      "url": "/practices/mergers-and-acquisitions",
+      "content": "The Mergers and Acquisitions practice at Harrow & Vance LLP buy-side and sell-side M&A for strategic and private equity clients. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Buy-side and sell-side M&A for strategic and private equity clients.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Mergers and Acquisitions"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000003",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Litigation",
+      "url": "/practices/litigation",
+      "content": "The Litigation practice at Harrow & Vance LLP business litigation, class actions, white collar defense, and appeals. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Business litigation, class actions, white collar defense, and appeals.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Litigation"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000004",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Real Estate",
+      "url": "/practices/real-estate",
+      "content": "The Real Estate practice at Harrow & Vance LLP real estate transactions, finance, leasing, land use, and disputes. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Real estate transactions, finance, leasing, land use, and disputes.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Real Estate"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000005",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Labor and Employment",
+      "url": "/practices/labor-and-employment",
+      "content": "The Labor and Employment practice at Harrow & Vance LLP employment counseling, traditional labor, and employment litigation. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Employment counseling, traditional labor, and employment litigation.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Labor and Employment"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOPRAC000000000000000000000000000006",
+      "templateId": "0D94B84662CC430B958A1DAF02D1A9BA",
+      "templateName": "Practice",
+      "title": "Intellectual Property",
+      "url": "/practices/intellectual-property",
+      "content": "The Intellectual Property practice at Harrow & Vance LLP patents, trademarks, copyrights, trade secrets, and privacy counseling. Attorneys collaborate across Boston, Chicago, Denver, and Seattle.",
+      "description": "Patents, trademarks, copyrights, trade secrets, and privacy counseling.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [
+        "Intellectual Property"
+      ],
+      "relatedLocations": []
+    },
+    {
+      "id": "DEMOLOC000000000000000000000000000001",
+      "templateId": "7436F28126D54E939B173FA996A317EC",
+      "templateName": "Location",
+      "title": "Boston",
+      "url": "/offices/boston",
+      "content": "The Boston office of Harrow & Vance LLP serves clients across the region with strengths spanning corporate, litigation, real estate, employment, and intellectual property. Attorneys collaborate with colleagues in other offices on multijurisdictional matters.",
+      "description": "Harrow & Vance Boston office.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [],
+      "relatedLocations": [
+        "Boston"
+      ]
+    },
+    {
+      "id": "DEMOLOC000000000000000000000000000002",
+      "templateId": "7436F28126D54E939B173FA996A317EC",
+      "templateName": "Location",
+      "title": "Chicago",
+      "url": "/offices/chicago",
+      "content": "The Chicago office of Harrow & Vance LLP serves clients across the region with strengths spanning corporate, litigation, real estate, employment, and intellectual property. Attorneys collaborate with colleagues in other offices on multijurisdictional matters.",
+      "description": "Harrow & Vance Chicago office.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [],
+      "relatedLocations": [
+        "Chicago"
+      ]
+    },
+    {
+      "id": "DEMOLOC000000000000000000000000000003",
+      "templateId": "7436F28126D54E939B173FA996A317EC",
+      "templateName": "Location",
+      "title": "Denver",
+      "url": "/offices/denver",
+      "content": "The Denver office of Harrow & Vance LLP serves clients across the region with strengths spanning corporate, litigation, real estate, employment, and intellectual property. Attorneys collaborate with colleagues in other offices on multijurisdictional matters.",
+      "description": "Harrow & Vance Denver office.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [],
+      "relatedLocations": [
+        "Denver"
+      ]
+    },
+    {
+      "id": "DEMOLOC000000000000000000000000000004",
+      "templateId": "7436F28126D54E939B173FA996A317EC",
+      "templateName": "Location",
+      "title": "Seattle",
+      "url": "/offices/seattle",
+      "content": "The Seattle office of Harrow & Vance LLP serves clients across the region with strengths spanning corporate, litigation, real estate, employment, and intellectual property. Attorneys collaborate with colleagues in other offices on multijurisdictional matters.",
+      "description": "Harrow & Vance Seattle office.",
+      "extra": "",
+      "language": "en",
+      "relatedPractices": [],
+      "relatedLocations": [
+        "Seattle"
+      ]
+    }
+  ]
+}
