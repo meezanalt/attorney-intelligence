@@ -16,11 +16,20 @@ import {
   type ScoredAttorney,
 } from 'src/lib/chat/attorney-search-scorer';
 import type {
+  AttorneySearchDoneEvent,
   AttorneySearchResponse,
   AttorneySearchResultItem,
+  AttorneySearchStage,
 } from 'src/lib/chat/attorney-search-types';
+import { endSse, initSse, sendSse } from 'src/lib/chat/sse';
 
 export type { AttorneySearchResponse, AttorneySearchResultItem };
+
+export const config = {
+  api: {
+    responseLimit: false,
+  },
+};
 
 interface SearchBody {
   query?: string;
@@ -56,6 +65,15 @@ function toResultItem(
       ? { matchScore: scoredC.matchScore, finding: scoredC.reasoning }
       : {}),
   };
+}
+
+function emitStage(res: NextApiResponse, stage: AttorneySearchStage): void {
+  sendSse(res, { stage });
+}
+
+function emitDone(res: NextApiResponse, payload: AttorneySearchResponse): void {
+  const done: AttorneySearchDoneEvent = { stage: 'done', ...payload };
+  sendSse(res, done);
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -96,8 +114,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
   }
 
+  const abort = new AbortController();
+  const onClose = () => {
+    if (!abort.signal.aborted) abort.abort();
+  };
+  req.on('close', onClose);
+
+  const disconnected = () => abort.signal.aborted || res.writableEnded || res.destroyed;
+
   try {
+    initSse(res);
+    emitStage(res, 'reading');
+
+    if (disconnected()) return;
+
     const classification = await classifyIntent(query);
+    if (disconnected()) return;
+
     const { practiceHints, locationHints } = mergeSearchHints({
       queryPracticeHints: classification.practiceHints,
       queryLocationHints: classification.locationHints,
@@ -105,15 +138,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       locationFilter,
     });
 
+    emitStage(res, 'searching');
+    if (disconnected()) return;
+
     const queryVec = await embedQuery(query);
+    if (disconnected()) return;
+
     const discovery = await findDiscoveryChunks(queryVec, {
       practiceHints,
       locationHints,
       limit: CANDIDATE_LIMIT,
       language: 'en',
     });
+    if (disconnected()) return;
 
     const candidates = await buildAttorneyCandidates(discovery.chunks);
+    if (disconnected()) return;
 
     if (candidates.length === 0) {
       const empty: AttorneySearchResponse = {
@@ -133,18 +173,31 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         ipHash,
         durationMs: Date.now() - startedAt,
       });
-      return res.status(200).json(empty);
+      if (!disconnected()) {
+        emitDone(res, empty);
+        endSse(res);
+      }
+      return;
     }
 
-    const scoredList = await scoreAttorneyCandidates(query, candidates);
+    emitStage(res, 'evaluating');
+    if (disconnected()) return;
+
+    const scoredList = await scoreAttorneyCandidates(query, candidates, {
+      signal: abort.signal,
+    });
+    if (disconnected()) return;
+
     let scored = false;
     let finals: (AttorneyCandidate | ScoredAttorney)[];
 
     if (scoredList && scoredList.length > 0) {
+      emitStage(res, 'ranking');
+      if (disconnected()) return;
       scored = true;
       finals = scoredList;
     } else if (scoredList && scoredList.length === 0) {
-      // Scoring succeeded but nothing cleared the floor
+      // Scoring succeeded but nothing cleared the floor — skip ranking; done with empty.
       const empty: AttorneySearchResponse = {
         query,
         scored: true,
@@ -162,9 +215,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         ipHash,
         durationMs: Date.now() - startedAt,
       });
-      return res.status(200).json(empty);
+      if (!disconnected()) {
+        emitDone(res, empty);
+        endSse(res);
+      }
+      return;
     } else {
-      // Scoring failed — degrade to unscored discovery list
+      // Scoring failed — skip ranking; degrade to unscored discovery list
       scored = false;
       finals = candidates.slice(0, MAX_RESULTS);
     }
@@ -195,10 +252,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       durationMs: Date.now() - startedAt,
     });
 
-    return res.status(200).json(response);
+    if (!disconnected()) {
+      emitDone(res, response);
+      endSse(res);
+    }
   } catch (err) {
+    if (abort.signal.aborted) return;
     console.error('[attorney-search] failed:', err);
-    return res.status(500).json({ error: 'Search failed. Please try again.' });
+    if (!res.headersSent) {
+      return res.status(500).json({ error: 'Search failed. Please try again.' });
+    }
+    // Stream already open — surface a terminal error event then close
+    if (!res.writableEnded) {
+      sendSse(res, { stage: 'error', error: 'Search failed. Please try again.' });
+      endSse(res);
+    }
+  } finally {
+    req.off('close', onClose);
   }
 }
 

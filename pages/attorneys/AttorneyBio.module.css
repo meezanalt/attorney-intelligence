@@ -135,6 +135,18 @@
   font-weight: 700;
 }
 
+.subhead {
+  margin: 16px 0 8px;
+  font-size: 0.85rem;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.subhead:first-of-type {
+  margin-top: 0;
+}
+
 .section p {
   margin: 0;
   font-size: 1.08rem;

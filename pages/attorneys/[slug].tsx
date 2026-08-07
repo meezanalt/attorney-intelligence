@@ -72,6 +72,72 @@ export default function AttorneyBioPage({ attorney, firmName }: Props) {
           <p>{attorney.bio}</p>
         </section>
 
+        {attorney.experience ? (
+          <section className={styles.section}>
+            <h2>Experience</h2>
+            <p>{attorney.experience}</p>
+          </section>
+        ) : null}
+
+        {attorney.credentials ? (
+          <section className={styles.section}>
+            <h2>Credentials</h2>
+            {attorney.credentials.education?.length ? (
+              <>
+                <h3 className={styles.subhead}>Education</h3>
+                <ul className={styles.metaList}>
+                  {attorney.credentials.education.map((e) => (
+                    <li key={e}>{e}</li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
+            {attorney.credentials.barAdmissions?.length ? (
+              <>
+                <h3 className={styles.subhead}>Bar Admissions</h3>
+                <ul className={styles.metaList}>
+                  {attorney.credentials.barAdmissions.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
+          </section>
+        ) : null}
+
+        {attorney.honors?.length ? (
+          <section className={styles.section}>
+            <h2>Honors</h2>
+            <ul className={styles.metaList}>
+              {attorney.honors.map((h) => (
+                <li key={h}>{h}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {attorney.memberships?.length ? (
+          <section className={styles.section}>
+            <h2>Memberships</h2>
+            <ul className={styles.metaList}>
+              {attorney.memberships.map((m) => (
+                <li key={m}>{m}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {attorney.thoughtLeadership?.length ? (
+          <section className={styles.section}>
+            <h2>Thought Leadership</h2>
+            <ul className={styles.metaList}>
+              {attorney.thoughtLeadership.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         <section className={styles.section}>
           <h2>Practice focus</h2>
           <ul className={styles.metaList}>

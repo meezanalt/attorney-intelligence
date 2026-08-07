@@ -6,8 +6,9 @@
     "noEmit": false,
     "outDir": "../.scripts-dist",
     "rootDir": "..",
+    "baseUrl": "..",
     "paths": {
-      "src/*": ["../src/*"]
+      "src/*": ["src/*"]
     },
     "esModuleInterop": true,
     "resolveJsonModule": true,

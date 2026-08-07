@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { Search, ArrowRight, MapPin, Briefcase, X } from 'lucide-react';
+import AttorneySearchLoading from 'src/components/attorney-search-loading-state';
+import { consumeAttorneySearchStream } from 'src/lib/chat/consume-attorney-search-stream';
 import type {
-  AttorneySearchResponse,
   AttorneySearchResultItem,
+  AttorneySearchStage,
 } from 'src/lib/chat/attorney-search-types';
 
 const EXAMPLES = [
@@ -165,6 +167,7 @@ export default function AttorneySearchPage() {
   const [scored, setScored] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
   const [emptyReason, setEmptyReason] = useState<string | undefined>();
+  const [loadingStage, setLoadingStage] = useState<AttorneySearchStage>('reading');
   const [placeholderIdx, setPlaceholderIdx] = useState(0);
   const [activeQuery, setActiveQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -206,14 +209,19 @@ export default function AttorneySearchPage() {
     setQuery(q);
     setActiveQuery(q);
     setPhase('loading');
+    setLoadingStage('reading');
     setResults([]);
     setErrorMessage('');
     setEmptyReason(undefined);
+    setScored(true);
 
     try {
       const res = await fetch('/api/attorney-search', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'text/event-stream',
+        },
         body: JSON.stringify({
           query: q,
           practice,
@@ -228,6 +236,8 @@ export default function AttorneySearchPage() {
         return;
       }
 
+      const contentType = res.headers.get('content-type') || '';
+
       if (!res.ok) {
         const data = (await res.json().catch(() => ({}))) as { error?: string };
         setErrorMessage(data.error || 'Search failed. Please try again.');
@@ -235,7 +245,17 @@ export default function AttorneySearchPage() {
         return;
       }
 
-      const data = (await res.json()) as AttorneySearchResponse;
+      if (!contentType.includes('text/event-stream') || !res.body) {
+        setErrorMessage('Search failed. Please try again.');
+        setPhase('error');
+        return;
+      }
+
+      const data = await consumeAttorneySearchStream(res.body, {
+        signal: controller.signal,
+        onStage: (stage) => setLoadingStage(stage),
+      });
+
       setScored(data.scored);
       setResults(data.results);
       setEmptyReason(data.emptyReason);
@@ -247,7 +267,11 @@ export default function AttorneySearchPage() {
       }
     } catch (err) {
       if ((err as Error).name === 'AbortError') return;
-      setErrorMessage('We could not reach the matching service. Please try again.');
+      setErrorMessage(
+        err instanceof Error && err.message
+          ? err.message
+          : 'We could not reach the matching service. Please try again.'
+      );
       setPhase('error');
     }
   }
@@ -263,11 +287,12 @@ export default function AttorneySearchPage() {
     setErrorMessage('');
     setEmptyReason(undefined);
     setScored(true);
+    setLoadingStage('reading');
     setTimeout(() => inputRef.current?.focus(), 50);
   }
 
-  const showHero =
-    phase === 'idle' || phase === 'loading' || phase === 'error' || phase === 'empty';
+  const showHero = phase === 'idle' || phase === 'error' || phase === 'empty';
+  const showLoading = phase === 'loading';
   const showResults = phase === 'results';
 
   return (
@@ -849,13 +874,6 @@ export default function AttorneySearchPage() {
             </>
           )}
 
-          {phase === 'loading' && (
-            <div className="loading-wrap">
-              <div className="stamp" />
-              <span className="loading-text">Reviewing your matter…</span>
-            </div>
-          )}
-
           {phase === 'error' && (
             <div className="status-panel">
               <p>{errorMessage}</p>
@@ -878,7 +896,7 @@ export default function AttorneySearchPage() {
             <div className="status-panel">
               <p>
                 {emptyReason === 'below_threshold'
-                  ? 'We reviewed available attorney profiles but did not find a strong enough match for this matter. Try refining your description, or adjust the practice and location filters.'
+                  ? 'We scored available attorney profiles against your matter, but none cleared our match threshold. Try refining your description, or adjust the practice and location filters.'
                   : 'No attorney profiles matched this search. Try a broader description or different filters.'}
               </p>
               <div className="status-actions">
@@ -896,6 +914,8 @@ export default function AttorneySearchPage() {
         </div>
       )}
 
+      {showLoading && <AttorneySearchLoading stage={loadingStage} />}
+
       {showResults && (
         <div className="results-wrap">
           <div className="recap">
@@ -905,7 +925,7 @@ export default function AttorneySearchPage() {
                 <>
                   {' '}
                   <span style={{ color: 'var(--slate-light)' }}>
-                    (ranking scores unavailable — showing discovery matches)
+                    (AI ranking unavailable — showing discovery matches without scores)
                   </span>
                 </>
               )}

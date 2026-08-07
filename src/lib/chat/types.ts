@@ -1,3 +1,9 @@
+/** Credentials block used on enriched demo attorney bios. */
+export interface AttorneyCredentials {
+  education: string[];
+  barAdmissions: string[];
+}
+
 /** Content item shape used by the chunker and seed pipeline. */
 export interface ChatContentItem {
   id: string;
@@ -16,6 +22,16 @@ export interface ChatContentItem {
   relatedPractices: string[];
   /** Structured location titles. Used for pre-filtering. */
   relatedLocations: string[];
+  /** Representative matters/deals (demo enrichment). Concatenated into embed text at seed time. */
+  experience?: string;
+  /** Education and bar admissions (demo enrichment). */
+  credentials?: AttorneyCredentials;
+  /** Industry recognitions (demo enrichment). */
+  honors?: string[];
+  /** Professional memberships (demo enrichment). */
+  memberships?: string[];
+  /** Publications and speaking (demo enrichment). */
+  thoughtLeadership?: string[];
 }
 
 /** A single sliding-window chunk ready for embedding. */

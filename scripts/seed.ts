@@ -3,11 +3,13 @@
  *
  * Usage:
  *   npm run seed
+ *   npm run seed:force   # ignore SeedProgress and re-embed all items
  *
  * Required env:
  *   MONGODB_URI, OPENAI_API_KEY
  * Optional:
  *   MONGODB_DB_NAME=attorney_intelligence
+ *   SEED_FORCE=true
  */
 
 import * as fs from 'fs';
@@ -18,6 +20,7 @@ import * as dotenvFlow from 'dotenv-flow';
 
 import mongoose from 'mongoose';
 import { chunkItem } from '../src/lib/chat/chunker';
+import { withAssembledContent } from '../src/lib/chat/assemble-item-text';
 import { embedTexts } from '../src/lib/chat/embeddings';
 import { replaceItemChunks } from '../src/lib/chat/vector-store';
 import SeedProgress from '../src/models/SeedProgress';
@@ -27,6 +30,7 @@ const MONGODB_URI = process.env.MONGODB_URI as string;
 const DB_NAME = process.env.MONGODB_DB_NAME || 'attorney_intelligence';
 const MAX_WORKERS = 3;
 const MIN_ITEM_GAP_MS = 500;
+const FORCE_RESEED = process.argv.includes('--force') || process.env.SEED_FORCE === 'true';
 
 const DATA_PATH = path.join(__dirname, '..', 'demo-data', 'attorneys.json');
 
@@ -67,14 +71,15 @@ async function markFailed(itemId: string, error: string): Promise<void> {
 }
 
 async function processItem(item: ChatContentItem): Promise<void> {
-  if (await isDone(item.id)) {
+  if (!FORCE_RESEED && (await isDone(item.id))) {
     console.log(`[seed] skip (done) ${item.id} — ${item.title}`);
     return;
   }
 
   console.log(`[seed] processing ${item.id} — ${item.title} (${item.templateName})`);
 
-  const chunks = chunkItem(item);
+  // Assemble enriched bio sections into content before chunking (chunker unchanged).
+  const chunks = chunkItem(withAssembledContent(item));
   if (chunks.length === 0) {
     console.warn(`[seed] no chunks for ${item.id} — marking done anyway`);
     await markDone(item.id);
@@ -136,11 +141,17 @@ async function main(): Promise<void> {
   console.log(
     `[seed] Loaded ${dataset.items.length} items for ${dataset.firm.name} from demo-data/attorneys.json`
   );
+  if (FORCE_RESEED) {
+    console.log('[seed] --force: re-embedding all items (ignoring SeedProgress done state)');
+  }
 
   await connectMongo();
   await workerPool(dataset.items);
 
-  const approxChunks = dataset.items.reduce((sum, item) => sum + chunkItem(item).length, 0);
+  const approxChunks = dataset.items.reduce(
+    (sum, item) => sum + chunkItem(withAssembledContent(item)).length,
+    0
+  );
   console.log(
     `\n[seed] === Complete: ${dataset.items.length} items, ~${approxChunks} chunks → db="${DB_NAME}" ===`
   );

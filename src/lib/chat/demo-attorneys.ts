@@ -26,6 +26,14 @@ export interface DemoAttorneyProfile {
   description: string;
   practices: string[];
   locations: string[];
+  experience?: string;
+  credentials?: {
+    education: string[];
+    barAdmissions: string[];
+  };
+  honors?: string[];
+  memberships?: string[];
+  thoughtLeadership?: string[];
 }
 
 let cached: DemoDataset | null = null;
@@ -65,6 +73,11 @@ export function listDemoAttorneys(): DemoAttorneyProfile[] {
       description: item.description,
       practices: item.relatedPractices || [],
       locations: item.relatedLocations || [],
+      experience: item.experience || '',
+      credentials: item.credentials || { education: [], barAdmissions: [] },
+      honors: item.honors || [],
+      memberships: item.memberships || [],
+      thoughtLeadership: item.thoughtLeadership || [],
     }));
 }
 

@@ -112,7 +112,8 @@ Respond with JSON only:
  */
 export async function scoreAttorneyCandidates(
   query: string,
-  candidates: AttorneyCandidate[]
+  candidates: AttorneyCandidate[],
+  options?: { signal?: AbortSignal }
 ): Promise<ScoredAttorney[] | null> {
   if (candidates.length === 0) return [];
 
@@ -122,20 +123,23 @@ export async function scoreAttorneyCandidates(
   const client = new OpenAI({ apiKey });
 
   try {
-    const completion = await client.chat.completions.create({
-      model: process.env.OPENAI_CHAT_MODEL || 'gpt-4o-mini',
-      messages: [
-        {
-          role: 'system',
-          content: buildAttorneyScorerSystemPrompt(),
-        },
-        { role: 'user', content: buildScorePrompt(query, candidates.slice(0, CANDIDATE_LIMIT)) },
-      ],
-      max_tokens: 2800,
-      temperature: 0.25,
-      stream: false,
-      response_format: { type: 'json_object' },
-    });
+    const completion = await client.chat.completions.create(
+      {
+        model: process.env.OPENAI_CHAT_MODEL || 'gpt-4o-mini',
+        messages: [
+          {
+            role: 'system',
+            content: buildAttorneyScorerSystemPrompt(),
+          },
+          { role: 'user', content: buildScorePrompt(query, candidates.slice(0, CANDIDATE_LIMIT)) },
+        ],
+        max_tokens: 2800,
+        temperature: 0.25,
+        stream: false,
+        response_format: { type: 'json_object' },
+      },
+      options?.signal ? { signal: options.signal } : undefined
+    );
 
     const text = completion.choices[0]?.message?.content?.trim();
     if (!text) return null;
@@ -161,6 +165,8 @@ export async function scoreAttorneyCandidates(
     scored.sort((a, b) => b.matchScore - a.matchScore);
     return scored.slice(0, MAX_RESULTS);
   } catch (err) {
+    if (options?.signal?.aborted) return null;
+    if (err instanceof Error && err.name === 'AbortError') return null;
     console.error('[attorney-search] scoring failed:', err);
     return null;
   }

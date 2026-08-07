@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed": "ts-node -r tsconfig-paths/register -P scripts/tsconfig.json scripts/seed.ts"
+    "seed": "ts-node -r tsconfig-paths/register -P scripts/tsconfig.json scripts/seed.ts",
+    "seed:force": "ts-node -r tsconfig-paths/register -P scripts/tsconfig.json scripts/seed.ts --force",
+    "generate-demo-data": "ts-node -P scripts/tsconfig.json scripts/generate-demo-data.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.3",
