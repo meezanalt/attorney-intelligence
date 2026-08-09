@@ -9,6 +9,7 @@ Static JSON at `attorneys.json` — fictional attorney directory for product dem
 - Practice tags align with `CANONICAL_PRACTICES` in `src/lib/chat/practice-hints.ts`
 - Enriched bio fields: `experience`, `credentials`, `honors`, `memberships`, `thoughtLeadership`
   (assembled into embed text at seed time via `assembleItemContent` — chunker unchanged)
+- Bio `photoUrl`: deterministic dummy headshot (`i.pravatar.cc`) keyed by attorney id
 
 ## Regenerate corpus
 

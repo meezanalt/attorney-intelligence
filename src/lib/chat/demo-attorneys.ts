@@ -24,6 +24,7 @@ export interface DemoAttorneyProfile {
   title: string;
   bio: string;
   description: string;
+  photoUrl?: string;
   practices: string[];
   locations: string[];
   experience?: string;
@@ -34,6 +35,17 @@ export interface DemoAttorneyProfile {
   honors?: string[];
   memberships?: string[];
   thoughtLeadership?: string[];
+}
+
+/** Prefer stored photo; fall back to deterministic demo headshot. */
+export function resolveDemoPhotoUrl(id: string, photoUrl?: string, size = 400): string | undefined {
+  if (photoUrl?.trim()) {
+    return photoUrl.trim().replace(/i\.pravatar\.cc\/\d+/, `i.pravatar.cc/${size}`);
+  }
+  if (id.startsWith('DEMOATTY')) {
+    return `https://i.pravatar.cc/${size}?u=${encodeURIComponent(id)}`;
+  }
+  return undefined;
 }
 
 let cached: DemoDataset | null = null;
@@ -71,6 +83,7 @@ export function listDemoAttorneys(): DemoAttorneyProfile[] {
       title: parseTitle(item.extra),
       bio: item.content,
       description: item.description,
+      photoUrl: resolveDemoPhotoUrl(item.id, item.photoUrl),
       practices: item.relatedPractices || [],
       locations: item.relatedLocations || [],
       experience: item.experience || '',

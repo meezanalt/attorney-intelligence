@@ -77,6 +77,7 @@ export function chunkItem(item: ChatContentItem): ChatChunk[] {
     templateType: item.templateId,
     title: item.title,
     url: item.url,
+    ...(item.photoUrl ? { photoUrl: item.photoUrl } : {}),
     relatedPractices: item.relatedPractices,
     relatedLocations: item.relatedLocations,
   }));

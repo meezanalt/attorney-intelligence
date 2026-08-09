@@ -56,6 +56,7 @@ export async function replaceItemChunks(
     templateType: chunk.templateType,
     title: chunk.title,
     url: chunk.url,
+    ...(chunk.photoUrl ? { photoUrl: chunk.photoUrl } : {}),
     relatedPractices: chunk.relatedPractices,
     relatedLocations: chunk.relatedLocations,
   }));

@@ -19,6 +19,7 @@ interface BioItem {
   templateName: string;
   title: string;
   url: string;
+  photoUrl: string;
   content: string;
   description: string;
   extra: string;
@@ -38,6 +39,7 @@ interface ContentItem {
   templateName: string;
   title: string;
   url: string;
+  photoUrl?: string;
   content: string;
   description: string;
   extra: string;
@@ -49,6 +51,11 @@ interface ContentItem {
   honors?: string[];
   memberships?: string[];
   thoughtLeadership?: string[];
+}
+
+/** Deterministic dummy headshot — same id always maps to the same face. */
+function demoPhotoUrl(id: string): string {
+  return `https://i.pravatar.cc/176?u=${encodeURIComponent(id)}`;
 }
 
 function pick<T>(arr: T[], i: number): T {
@@ -622,6 +629,7 @@ function enrichBio(raw: ContentItem, index: number): BioItem {
     templateName: 'Bio Detail',
     title: raw.title,
     url: raw.url,
+    photoUrl: demoPhotoUrl(raw.id),
     content,
     description,
     extra: raw.extra,

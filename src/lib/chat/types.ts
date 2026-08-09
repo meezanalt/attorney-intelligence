@@ -11,6 +11,8 @@ export interface ChatContentItem {
   templateName: string;
   title: string;
   url: string;
+  /** Optional headshot URL (demo / directory photos). */
+  photoUrl?: string;
   /** Main prose field (Content or Description, HTML-stripped by the chunker). */
   content: string;
   /** Short summary field (MetaDescription or Description). */
@@ -43,6 +45,7 @@ export interface ChatChunk {
   templateType: string;
   title: string;
   url: string;
+  photoUrl?: string;
   /** Carried on every chunk of an item so discovery pre-filtering covers all semantic chunks. */
   relatedPractices: string[];
   relatedLocations: string[];
@@ -58,6 +61,7 @@ export interface EmbeddedChunk {
   templateType: string;
   title: string;
   url: string;
+  photoUrl?: string;
   relatedPractices: string[];
   relatedLocations: string[];
 }

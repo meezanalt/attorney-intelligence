@@ -10,6 +10,8 @@ export interface IChatEmbedding extends Document {
   templateType: string;
   title: string;
   url: string;
+  /** Optional attorney headshot URL. */
+  photoUrl?: string;
   /** Practice area titles — stored on every chunk for pre-filtering. */
   relatedPractices: string[];
   /** Location titles — stored on every chunk for pre-filtering. */
@@ -34,6 +36,7 @@ const ChatEmbeddingSchema = new Schema<IChatEmbedding>(
     templateType: { type: String, required: true },
     title: { type: String, required: true },
     url: { type: String, required: true },
+    photoUrl: { type: String },
     relatedPractices: { type: [String], default: [] },
     relatedLocations: { type: [String], default: [] },
   },
