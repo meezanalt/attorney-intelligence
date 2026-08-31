@@ -2,6 +2,7 @@ import { getChatEmbeddingModel } from './chat-db';
 import { BIO_DETAIL } from './templates';
 import type { RetrievedChunk } from './types';
 import type { AttorneyCandidate } from './attorney-search-scorer';
+import { listDemoAttorneys, resolveDemoPhotoUrl } from './demo-attorneys';
 
 function inferTitle(text: string): string {
   if (/\b(?:co-)?managing partner\b/i.test(text)) return 'Managing Partner';
@@ -49,14 +50,21 @@ export async function buildAttorneyCandidates(
 
   const byId = new Map(docs.map((d) => [d.itemId as string, d]));
 
+  // Build a gender lookup from the in-memory demo dataset so photo resolution
+  // works correctly even when MongoDB has a stale or missing photoUrl.
+  const genderById = new Map(
+    listDemoAttorneys().map((a) => [a.id, a.gender])
+  );
+
   return orderedIds.map((id) => {
     const doc = byId.get(id);
     const chunk = chunks.find((c) => c.itemId === id)!;
     const text = (doc?.text as string) || chunk.text || '';
-    const photoUrl =
-      typeof doc?.photoUrl === 'string' && doc.photoUrl.trim()
-        ? doc.photoUrl.trim()
-        : undefined;
+
+    // Use stored photoUrl only if it's a current valid path (not the deleted placeholder).
+    const rawPhoto = typeof doc?.photoUrl === 'string' ? doc.photoUrl.trim() : undefined;
+    const storedPhoto = rawPhoto && rawPhoto !== '/default-bio.webp' ? rawPhoto : undefined;
+    const photoUrl = resolveDemoPhotoUrl(id, storedPhoto, genderById.get(id));
 
     return {
       itemId: id,
