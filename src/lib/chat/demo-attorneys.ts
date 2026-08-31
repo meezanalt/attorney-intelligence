@@ -25,6 +25,7 @@ export interface DemoAttorneyProfile {
   bio: string;
   description: string;
   photoUrl?: string;
+  gender?: 'male' | 'female';
   practices: string[];
   locations: string[];
   experience?: string;
@@ -37,13 +38,17 @@ export interface DemoAttorneyProfile {
   thoughtLeadership?: string[];
 }
 
-/** Prefer stored photo; fall back to deterministic demo headshot. */
-export function resolveDemoPhotoUrl(id: string, photoUrl?: string, size = 400): string | undefined {
+/** Prefer stored photo; fall back to a local placeholder headshot keyed by gender. */
+export function resolveDemoPhotoUrl(
+  id: string,
+  photoUrl?: string,
+  gender?: 'male' | 'female'
+): string | undefined {
   if (photoUrl?.trim()) {
-    return photoUrl.trim().replace(/i\.pravatar\.cc\/\d+/, `i.pravatar.cc/${size}`);
+    return photoUrl.trim();
   }
   if (id.startsWith('DEMOATTY')) {
-    return `https://i.pravatar.cc/${size}?u=${encodeURIComponent(id)}`;
+    return gender === 'female' ? '/female-attorney.png' : '/male-attorney.png';
   }
   return undefined;
 }
@@ -83,7 +88,8 @@ export function listDemoAttorneys(): DemoAttorneyProfile[] {
       title: parseTitle(item.extra),
       bio: item.content,
       description: item.description,
-      photoUrl: resolveDemoPhotoUrl(item.id, item.photoUrl),
+      photoUrl: resolveDemoPhotoUrl(item.id, item.photoUrl, item.gender),
+      gender: item.gender,
       practices: item.relatedPractices || [],
       locations: item.relatedLocations || [],
       experience: item.experience || '',

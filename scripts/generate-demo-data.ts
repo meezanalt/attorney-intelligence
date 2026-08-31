@@ -12,6 +12,7 @@ const PRAC_TID = '0D94B84662CC430B958A1DAF02D1A9BA';
 const LOC_TID = '7436F28126D54E939B173FA996A317EC';
 
 type Credentials = { education: string[]; barAdmissions: string[] };
+type Gender = 'male' | 'female';
 
 interface BioItem {
   id: string;
@@ -20,6 +21,7 @@ interface BioItem {
   title: string;
   url: string;
   photoUrl: string;
+  gender: Gender;
   content: string;
   description: string;
   extra: string;
@@ -40,6 +42,7 @@ interface ContentItem {
   title: string;
   url: string;
   photoUrl?: string;
+  gender?: Gender;
   content: string;
   description: string;
   extra: string;
@@ -53,9 +56,122 @@ interface ContentItem {
   thoughtLeadership?: string[];
 }
 
-/** Deterministic dummy headshot — same id always maps to the same face. */
-function demoPhotoUrl(id: string): string {
-  return `https://i.pravatar.cc/176?u=${encodeURIComponent(id)}`;
+/**
+ * Gender lookup for the fictional roster, keyed by full name. Drives which
+ * local headshot asset (`/male-attorney.png` / `/female-attorney.png`) a bio
+ * gets — replaces the old i.pravatar.cc dummy avatars.
+ */
+const NAME_GENDER: Record<string, Gender> = {
+  'Thomas Torres': 'male',
+  'Benjamin Inoue': 'male',
+  'Ethan Vega': 'male',
+  'Nora Iverson': 'female',
+  'Andre Winters': 'male',
+  'Vera Khan': 'female',
+  'Caleb Zimmer': 'male',
+  'Jade Kim': 'female',
+  'Reed Berg': 'male',
+  'Zoe Ortiz': 'female',
+  'Grant Banks': 'male',
+  'Neil Owens': 'male',
+  'Violet Dunn': 'female',
+  'Drew Ross': 'male',
+  'Marcus Finley': 'male',
+  'Aisha Holloway': 'female',
+  'Olivia Hayes': 'female',
+  'Clara Underwood': 'female',
+  'Seth Harper': 'male',
+  'Piper Vaughn': 'female',
+  'Wade Joyce': 'male',
+  'Delia York': 'female',
+  'Kai Okonkwo': 'male',
+  'Sasha Soto': 'female',
+  'Aiden Nguyen': 'male',
+  'Hazel Abbott': 'female',
+  'Opal Nolan': 'female',
+  'Wes Craig': 'male',
+  'Erin Perry': 'female',
+  'Priya Eastman': 'female',
+  'James Mendoza': 'male',
+  'Hannah Gupta': 'female',
+  'Owen Tran': 'male',
+  'Tara Gibson': 'female',
+  'Quinn Upton': 'male',
+  'Xena Ibrahim': 'female',
+  'Elliot Webb': 'male',
+  'Lana Patel': 'female',
+  'Troy Lang': 'male',
+  'Brooke Morris': 'female',
+  'Iris Zimmerman': 'female',
+  'Pete Mitchell': 'male',
+  'Yara Bishop': 'female',
+  'Finn Olsen': 'male',
+  'Jonathan Drake': 'male',
+  'Natalie Brooks': 'female',
+  'Victor Foster': 'male',
+  'Maya Singh': 'female',
+  'Hugo Farrell': 'male',
+  'Rosa Turner': 'female',
+  'Yves Hart': 'male',
+  'Farah Vance': 'female',
+  'Miles Hale': 'male',
+  'Uma Li': 'female',
+  'Colin Lopez': 'male',
+  'Jake Young': 'male',
+  'Rita Lawson': 'female',
+  'Zack Alvarez': 'male',
+  'Gina Nash': 'female',
+  'Sofia Curtis': 'female',
+  'Carlos Whitfield': 'male',
+  'Amelia Diaz': 'female',
+  'Felix Reeves': 'male',
+  'Diana Edwards': 'female',
+  'Samir Steele': 'male',
+  'Zara Greene': 'female',
+  'Gabe Ulrich': 'male',
+  'Nina Nair': 'female',
+  'Vince Grant': 'male',
+  'Dana Kline': 'female',
+  'Kara Xu': 'female',
+  'Sean Keller': 'male',
+  'Ava Zhao': 'female',
+  'Hank Marsh': 'male',
+  'David Barron': 'male',
+  'Grace Rahman': 'female',
+  'Noah Cross': 'male',
+  'Ivy Quinn': 'female',
+  'Leo Dalton': 'male',
+  'Thea Romero': 'female',
+  'Adrian Frost': 'male',
+  'Helen Tyler': 'female',
+  'Oscar Chen': 'male',
+  'Willa Adler': 'female',
+  'Evan Jensen': 'male',
+  'Liam Walsh': 'male',
+  'Tess Jordan': 'female',
+  'Brett Yates': 'male',
+  'Isla Lambert': 'female',
+  'Rachel Ashford': 'female',
+  'Michelle Brennan': 'female',
+  'Lila Moreau': 'female',
+  'Julian Park': 'male',
+  'Camille Cohen': 'female',
+  'Ulysses Price': 'male',
+  'Blair Ellis': 'male',
+  'Ian Shaw': 'male',
+  'Paula Vargas': 'female',
+  'Yuri Torres': 'male',
+  'Fiona Inoue': 'female',
+};
+
+/** Local headshot asset for a given gender — replaces the old i.pravatar.cc dummy avatars. */
+function demoPhotoUrl(gender: Gender): string {
+  return gender === 'female' ? '/female-attorney.png' : '/male-attorney.png';
+}
+
+/** Resolve gender for a bio: explicit field wins, then the name lookup, then a stable default. */
+function resolveGender(raw: ContentItem): Gender {
+  return raw.gender || NAME_GENDER[raw.title] || 'male';
 }
 
 function pick<T>(arr: T[], i: number): T {
@@ -616,6 +732,7 @@ function enrichBio(raw: ContentItem, index: number): BioItem {
   const practices = raw.relatedPractices || [];
   const focus = primaryFocus(practices);
   const position = titleCasePosition(raw.extra);
+  const gender = resolveGender(raw);
   const { content, description } = buildContent(raw.title, position, practices, city, focus, index);
   const experience = buildExperience(raw.title, focus, city, practices, index);
   const credentials = buildCredentials(city, index, practices);
@@ -629,7 +746,8 @@ function enrichBio(raw: ContentItem, index: number): BioItem {
     templateName: 'Bio Detail',
     title: raw.title,
     url: raw.url,
-    photoUrl: demoPhotoUrl(raw.id),
+    photoUrl: demoPhotoUrl(gender),
+    gender,
     content,
     description,
     extra: raw.extra,
@@ -647,36 +765,42 @@ function enrichBio(raw: ContentItem, index: number): BioItem {
 function makeImmigrationBios(startId: number): BioItem[] {
   const people: Array<{
     name: string;
+    gender: Gender;
     position: string;
     practices: string[];
     city: string;
   }> = [
     {
       name: 'Marisol Reyes',
+      gender: 'female',
       position: 'Partner',
       practices: ['Immigration'],
       city: 'Boston',
     },
     {
       name: 'Daniel Cho',
+      gender: 'male',
       position: 'Partner',
       practices: ['Immigration', 'Labor and Employment'],
       city: 'Chicago',
     },
     {
       name: 'Priya Sankar',
+      gender: 'female',
       position: 'Counsel',
       practices: ['Immigration'],
       city: 'Denver',
     },
     {
       name: 'Jonah Ellison',
+      gender: 'male',
       position: 'Associate',
       practices: ['Immigration', 'Litigation'],
       city: 'Seattle',
     },
     {
       name: 'Camila Duarte',
+      gender: 'female',
       position: 'Special Counsel',
       practices: ['Immigration'],
       city: 'Austin',
@@ -692,6 +816,7 @@ function makeImmigrationBios(startId: number): BioItem[] {
       templateName: 'Bio Detail',
       title: p.name,
       url: `/attorneys/${slugify(p.name)}`,
+      gender: p.gender,
       content: '',
       description: '',
       extra,
@@ -705,21 +830,30 @@ function makeImmigrationBios(startId: number): BioItem[] {
 
 function makeHealthcareBoost(startId: number): BioItem[] {
   // Dedicated healthcare (not only Litigation secondary) for better discovery demos
-  const people = [
+  const people: Array<{
+    name: string;
+    gender: Gender;
+    position: string;
+    practices: string[];
+    city: string;
+  }> = [
     {
       name: 'Evelyn Marks',
+      gender: 'female',
       position: 'Partner',
       practices: ['Healthcare'],
       city: 'Boston',
     },
     {
       name: 'Ravi Deshmukh',
+      gender: 'male',
       position: 'Counsel',
       practices: ['Healthcare', 'Corporate'],
       city: 'Chicago',
     },
     {
       name: 'Simone Adler',
+      gender: 'female',
       position: 'Associate',
       practices: ['Healthcare', 'Privacy and Cybersecurity'],
       city: 'Austin',
@@ -735,6 +869,7 @@ function makeHealthcareBoost(startId: number): BioItem[] {
       templateName: 'Bio Detail',
       title: p.name,
       url: `/attorneys/${slugify(p.name)}`,
+      gender: p.gender,
       content: '',
       description: '',
       extra,

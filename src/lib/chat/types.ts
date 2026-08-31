@@ -13,6 +13,8 @@ export interface ChatContentItem {
   url: string;
   /** Optional headshot URL (demo / directory photos). */
   photoUrl?: string;
+  /** Optional gender identifier (demo enrichment) — used to pick a placeholder headshot. */
+  gender?: 'male' | 'female';
   /** Main prose field (Content or Description, HTML-stripped by the chunker). */
   content: string;
   /** Short summary field (MetaDescription or Description). */

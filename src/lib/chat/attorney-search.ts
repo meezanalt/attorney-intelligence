@@ -53,16 +53,10 @@ export async function buildAttorneyCandidates(
     const doc = byId.get(id);
     const chunk = chunks.find((c) => c.itemId === id)!;
     const text = (doc?.text as string) || chunk.text || '';
-    const storedPhoto =
+    const photoUrl =
       typeof doc?.photoUrl === 'string' && doc.photoUrl.trim()
         ? doc.photoUrl.trim()
         : undefined;
-    // Demo corpus fallback when Mongo hasn't been re-seeded with photoUrl yet.
-    const photoUrl =
-      storedPhoto ||
-      (id.startsWith('DEMOATTY')
-        ? `https://i.pravatar.cc/176?u=${encodeURIComponent(id)}`
-        : undefined);
 
     return {
       itemId: id,
